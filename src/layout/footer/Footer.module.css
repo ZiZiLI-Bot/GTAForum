@@ -1,0 +1,21 @@
+.Footer {
+  background: url(../../asset/bg-footer.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.onTop {
+  background-image: url(../../asset/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%) rotate(-90deg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.onTop:hover {
+  top: 8%;
+}

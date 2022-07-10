@@ -1,0 +1,18 @@
+.RunText {
+  background-image: url(../../asset/hz-notice.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 220px;
+  height: 110px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.slideFrame {
+  background-image: url(../../asset/bg-slider.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}

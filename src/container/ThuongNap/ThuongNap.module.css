@@ -1,0 +1,50 @@
+.bgModal {
+  background-image: url(../../asset/bg-index1.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.ItemBox {
+  background-image: url(../../asset/bg-menu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 15px 24px 15px 0;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.ItemBox::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -22px;
+  width: 63px;
+  height: 100%;
+  background: url(../../asset/menu-frame.png) center no-repeat;
+  background-size: cover;
+  left: auto;
+  right: -16px;
+  transform: scale(-1);
+}
+
+.ItemBox::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -22px;
+  width: 63px;
+  height: 100%;
+  background: url(../../asset/menu-frame.png) center no-repeat;
+  background-size: cover;
+}
+
+.listItem::-webkit-scrollbar {
+  height: 5px;
+}

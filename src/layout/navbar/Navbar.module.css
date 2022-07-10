@@ -1,0 +1,89 @@
+.navbar {
+  width: 100%;
+  height: 83px;
+  position: relative;
+  top: 20px;
+  background-image: url(../../asset/bg-menu.png);
+  background-repeat: no-repeat;
+  text-shadow: 0 2px 2px #000;
+  color: #b8d4ff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.navbar::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -22px;
+  width: 63px;
+  height: 83px;
+  background: url(../../asset/menu-frame.png) center center no-repeat;
+}
+
+.navbar::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -22px;
+  width: 63px;
+  height: 83px;
+  background: url(../../asset/menu-frame.png) center center no-repeat;
+  left: auto;
+  right: -16px;
+  transform: scale(-1);
+}
+
+.Text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  cursor: pointer;
+  padding: 0 25px;
+  position: relative;
+}
+
+.Text::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(110, 110, 110);
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.Text::before {
+  content: '';
+  display: block;
+  width: 210px;
+  height: 80px;
+  position: absolute;
+  background-image: url(../../asset/menu-active.png);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.Text:hover.Text::before {
+  opacity: 1;
+}
+
+.OpenDrawer {
+  position: absolute;
+  bottom: 50%;
+  left: 20px;
+  transform: translateY(50%);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.mobileTab {
+  margin-left: 30px;
+  margin-top: 14px;
+}
